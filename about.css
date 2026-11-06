@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:hover{
+    cursor: pointer;
+}
+
+.line {
+    width: 65%;
+    height: 2px;
+    background: #168cff;
+    margin: 15px auto;
+    box-shadow: 0 0 15px #168cff;
+}
+
+/* CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 50%;
+    border: 2px solid #168cff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 15px #168cff;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 38px;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px #168cff;
+}
+
+.content {
+    border: 1px solid #168cff;
+    border-radius: 15px;
+    padding: 25px;
+    min-height: 350px;
+    background: rgba(0, 15, 35, 0.5);
+}
+
+/* LANGUAGE */
+.item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #24466c;
+}
+
+.flag {
+    font-size: 45px;
+}
+
+.item h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.item p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* INFORMATION */
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 12px;
+    border-bottom: 1px solid #24466c;
+    font-size: 20px;
+}
+
+.info-item span {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #080808, #555555);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* NEXT AND BACK */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+    margin-top: 30px;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid #00eaff;
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 12px #00eaff;
+}
+
+button:hover {
+    background: #00eaff;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    padding: 40px 22px;
+}
+
+.menu a {
+    flex: 1;
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: #f7f7f7;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: 2px solid #00eaff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00eaff;
+}
+
+.menu a:hover {
+    background: #00eaff;
+    transform: translateY(-3px);
+}
+
+/* TITLE */
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-family: Georgia, serif;
+    font-size: 75px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.underline {
+    width: 230px;
+    height: 5px;
+    margin: 10px auto 40px;
+    background: linear-gradient(to right, #00ffff, #0066ff);
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00eaff;
+}
+
+/* MAIN CONTENT */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 22px;
+}
+
+.text-box {
+    width: 50%;
+    max-width: 830px;
+    padding: 40px;
+    background: white;
+    color: black;
+    text-align: center;
+    border: 2px solid #00dfff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px #111111;
+    margin-left: 350px;
+}
+
+.text-box p {
+    font-size: 38px;
+    line-height: 1.5;
+}
+
+
+/* BLUE BUTTONS */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: linear-gradient(120deg, #12e9ed, #0055ff);
+    border-radius: 60px;
+    box-shadow: 0 0 15px #007fff;
+}
+
+.accueil {
+    width: 210px;
+    height: 95px;
+    margin: -45px 22px 20px;
+    position: relative;
+    top: -2px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+/* PHONE AND TABLET */
+
+@media (max-width: 900px) {
+    .menu {
+        flex-wrap: wrap;
+        padding: 20px 12px;
+    }
+
+    .menu a {
+        min-width: 120px;
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .text-box {
+        order: 1;
+        width: 100%;
+    }
+
+    .text-box p {
+        font-size: 24px;
+    }
+
+    .back {
+        order: 2;
+    }
+
+    .next {
+        order: 3;
+    }
+
+    .accueil {
+        margin: 25px 20px;
+        width: 180px;
+        height: 70px;
+    }
+}

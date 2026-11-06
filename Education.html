@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="Education.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="ABOUT ME.html">ABOUT ME</a>
+        <a href="education.html" class="active">EDUCATION</a>
+        <a href="formation.html">FORMATION</a>
+        <a href="hobbies.html">HOBBIES</a>
+        <a href="gallery.html">GALERY</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <h1>About me</h1>
+
+    <div class="line"></div>
+
+    <p class="subtitle">　•　Mes informations</p>
+
+    <div class="container">
+
+        <!-- PAGE LANGUE -->
+        <div class="card page active" id="langue">
+
+            <h2>👋 Who Am I?</h2>
+
+            <div class="content">
+                <p>
+                    Hello! My name is Amine. I am 13 years old
+                    and I live in Nabeul, Tunisia.
+
+                    I am currently a student in the 8th grade.
+                    I am a curious and motivated person who
+                    enjoys discovering new things and learning
+                    new skills.
+
+                    I am interested in technology, sports,
+                    and the world of computers.
+                </p>
+
+                <!-- <div class="item">
+                    <span class="flag">🇹🇳</span>
+                    <div>
+                        <h3>Arabe</h3>
+                        <p>Langue maternelle</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="flag">🇫🇷</span>
+                    <div>
+                        <h3>Français</h3>
+
+                        <p>Acadimic level</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="flag">🇬🇧</span>
+                    <div>
+                        <h3>Anglais</h3>
+                        <p>Acadimic level</p>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
+        <!-- PAGE INFO -->
+        <div class="card page" id="info">
+
+            <h2>♙ Personal Information</h2>
+
+            <div class="content information">
+
+                <div class="info-item">
+                    <span>👤</span>
+                    <p><b>Nom :</b> Amine</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🎂</span>
+                    <p><b>Âge :</b> 13 ans</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📍</span>
+                    <p><b>Ville :</b> Nabeul</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🇹🇳</span>
+                    <p><b>Pays :</b> Tunisie</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🎓</span>
+                    <p><b>Classe :</b> 8th grade</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="showPage('Who Am I')">← Back</button>
+        <button onclick="showPage('Personal Information')">Next →</button>
+    </div>
+
+    <a href="index.html" class="home">⌂<br>Accueil</a>
+
+    <script>
+        function showPage(pageName) {
+
+            document.querySelectorAll(".page").forEach(function(page) {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(pageName).classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

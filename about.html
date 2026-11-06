@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="ABOUT ME.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <a href="index.html">HOME</a>
+        <a href="ABOUT ME.html">ABOUT ME</a>
+        <a href="Education.html">EDUCATION</a>
+        <a href="formation.html">FORMATION</a>
+        <a href="hobbies.html">HOBBIES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <h1>ABOUT ME</h1>
+    <div class="underline"></div>
+
+    <div class="container">
+
+        <div class="text-box">
+            <p>
+                I am currently a student and work hard to
+                improve my knowledge in school. I enjoy
+                learning English, technology, and sports
+                sciences.
+            </p>
+        </div>
+
+        
+    </div> <!-- PAGE INFO -->
+        <div class="card page" id="info">
+
+            <h2>♙ Info</h2>
+
+            <div class="content information">
+
+                <div class="info-item">
+                    <span>👤</span>
+                    <p><b>Nom :</b> Amine</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🎂</span>
+                    <p><b>Âge :</b> 13 ans</p>
+                </div>
+
+                <div class="info-item">
+                    <span>📍</span>
+                    <p><b>Ville :</b> Nabeul</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🇹🇳</span>
+                    <p><b>Pays :</b> Tunisie</p>
+                </div>
+
+                <div class="info-item">
+                    <span>🎓</span>
+                    <p><b>Classe :</b> 8ème année</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="showPage('langue')">← Back</button>
+        <button onclick="showPage('info')">Next →</button>
+    </div>
+
+    <a href="index.html" class="home">⌂<br>Accueil</a>
+
+    <script>
+        function showPage(pageName) {
+
+            document.querySelectorAll(".page").forEach(function(page) {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(pageName).classList.add("active");
+        }
+    </script>
+
+    <a href="index.html" class="button accueil">accueil</a>
+
+</body>
+</html>

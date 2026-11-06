@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #080d10, #171717);
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    padding: 35px 25px;
+}
+
+.menu a {
+    background: #f5f5f5;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 25px 20px;
+    border: 2px solid #00eaff;
+    border-radius: 6px;
+    box-shadow: 0 0 12px #00eaff;
+    flex: 1;
+}
+
+.menu a:hover {
+    background: #00eaff;
+    transform: translateY(-3px);
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 30px 40px;
+}
+
+/* PHOTO */
+
+.photo {
+    width: 35%;
+    flex-shrink: 0;
+    border: 3px solid #00eaff;
+    border-radius: 35px;
+    padding: 8px;
+    box-shadow: 0 0 20px #00eaff;
+}
+
+.photo img {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+}
+
+/* TEXT */
+
+.content {
+    flex: 1;
+    text-align: center;
+}
+
+.content p {
+    font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 75px;
+}
+
+.content span {
+    color: #00eaff;
+    font-weight: bold;
+}
+
+/* BLUE CARDS */
+
+.cards {
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    flex: 1;
+    height: 240px;
+    border: 3px solid #00eaff;
+    border-radius: 35px;
+    background: radial-gradient(
+        circle,
+        #007f8b,
+        #00434b,
+        #101719
+    );
+    box-shadow: 0 0 12px #003f46;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        min-width: 130px;
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .photo {
+        width: 85%;
+    }
+
+    .photo img {
+        height: auto;
+    }
+
+    .content p {
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        height: 150px;
+    }
+}
